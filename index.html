@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박일호의 홈페이지</title>
     <link rel="stylesheet" href="./practice.css" type="text/css">
+    <script type="text/javascript" src="add_two_number.js"></script>
+    <script type="text/javascript" src="whatTimeIsIt.js"></script>
 </head>
 <body>
 <form name= "myform" method="post">
@@ -27,17 +29,4 @@
     <p><span name ='valueA' id="valueA"></span>+<span name='valueB' id="valueB"></span>= <span name='valueC' id="valueC"></span>입니다.</p>    
 </form>
 </body>
-<script>
-    var df = document.myform;
-    function doSomething(){
-        let a = document.getElementById('inputA').value;
-        let b = document.getElementById('inputB').value;
-        document.getElementById('valueA').innerHTML=a;
-        document.getElementById('valueB').innerHTML=b;
-        document.getElementById('valueC').innerHTML=Number(a)+Number(b);
-    }
-    function whatTimeIsIt(){
-        alert(new Date());
-    }
-</script>
 </html>
