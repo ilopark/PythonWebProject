@@ -21,10 +21,10 @@
     <h5>다섯 번째 크기 헤드라인</h5>
     <button onclick="whatTimeIsIt()">현재시간</button>
     <label for="inputA">a</label>
-    <input id="inputA" value=1 onkeyup="doSomething()">
+    <input name = 'inputA' id="inputA" value=1 onkeyup="doSomething()">
     <label for="inputB">b</label>
-    <input id="inputB" value=2 onkeyup="doSomething()">
-    <p><span id="valueA">1</span>+<span id="valueB">2</span>= <span id="valueC">3</span>입니다.</p>    
+    <input name = 'inputB' id="inputB" value=2 onkeyup="doSomething()">
+    <p><span name ='valueA' id="valueA">1</span>+<span name='valueB' id="valueB">2</span>= <span name='valueC' id="valueC">3</span>입니다.</p>    
 </form>
 </body>
 <script>
@@ -35,6 +35,10 @@
         document.getElementById('valueA').innerHTML=a;
         document.getElementById('valueB').innerHTML=b;
         document.getElementById('valueC').innerHTML=Number(a)+Number(B);
+
+        alert(df.inputA.value);
+        
+
    }
    function whatTimeIsIt(){
     alert(new Date());
