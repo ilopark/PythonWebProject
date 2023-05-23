@@ -29,8 +29,9 @@
 <script>
     var df = document.myform;
     function doSomething(){
-        let a = document.getElementById('inputA').value;
-        let b = document.getElementById('inputB').value;
+        df.valueA.value = df.inputA.value;
+        df.valueB.value = df.inputB.value;
+        df.valueC.value = df.inputA.value+df.inputB.value;
    }
 </script>
 </html>
