@@ -30,24 +30,14 @@
 <script>
     var df = document.myform;
     function doSomething(){
-        //let a = document.getElementById('inputA').value;
-        //let b = document.getElementById('inputB').value;
-        //document.getElementById('valueA').innerHTML=a;
-        //document.getElementById('valueB').innerHTML=b;
-        //document.getElementById('valueC').innerHTML=Number(a)+Number(b);
-        //alert(df.inputA.value);
-
-        var a = df.inputA.value;
-        var b = df.inputB.value;
-        df.valueA.value = a;
-        df.valueB.value = b;
-        df.valueC.value = Number(a)+Number(b);
-        
-        
-
-   }
-   function whatTimeIsIt(){
-    alert(new Date());
-   }
+        let a = document.getElementById('inputA').value;
+        let b = document.getElementById('inputB').value;
+        document.getElementById('valueA').innerHTML=a;
+        document.getElementById('valueB').innerHTML=b;
+        document.getElementById('valueC').innerHTML=Number(a)+Number(b);
+    }
+    function whatTimeIsIt(){
+        alert(new Date());
+    }
 </script>
 </html>
